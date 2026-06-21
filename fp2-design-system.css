@@ -2688,3 +2688,102 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   font-weight: 700;
   font-size: 0.875rem;
 }
+.fp2-page .fp2-text-white-90 {
+  color: rgba(255, 255, 255, 0.9);
+}
+.fp2-page .fp2-bg-secondary-5 {
+  background-color: rgba(171, 0, 48, 0.05);
+}
+
+
+/* Additional Missing Utility & Layout Classes from Audit */
+.fp2-page .fp2-bg-green-100 { background-color: #d1fae5; }
+.fp2-page .fp2-border-green-200 { border-color: #a7f3d0; }
+.fp2-page .fp2-bg-red-100 { background-color: #fee2e2; }
+.fp2-page .fp2-border-red-200 { border-color: #fca5a5; }
+.fp2-page .fp2-bg-outline { background-color: var(--fp2-outline); }
+.fp2-page .fp2-border-gray-100 { border-color: #f3f4f6; }
+.fp2-page .fp2-border-gray-200 { border-color: #e5e7eb; }
+.fp2-page .fp2-gap-y-6 { row-gap: 1.5rem; }
+.fp2-page .fp2-grid-1 { display: grid; grid-template-columns: 1fr; }
+.fp2-page .fp2-h-4 { height: 1rem; }
+.fp2-page .fp2-w-4 { width: 1rem; }
+.fp2-page .fp2-mr-2 { margin-right: 0.5rem; }
+.fp2-page .fp2-mt-8 { margin-top: 2rem; }
+.fp2-page .fp2-mb-12 { margin-bottom: 3rem; }
+.fp2-page .fp2-pt-8 { padding-top: 2rem; }
+.fp2-page .fp2-py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.fp2-page .fp2-py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.fp2-page .fp2-py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+.fp2-page .fp2-max-w-7xl { max-width: 80rem; }
+.fp2-page .fp2-row-center { display: flex; align-items: center; justify-content: center; }
+
+@media (min-width: 768px) {
+  .fp2-page .fp2-md\:text-2xl { font-size: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .fp2-page .fp2-lg\:items-start { align-items: flex-start; }
+  .fp2-page .fp2-lg\:justify-between { justify-content: space-between; }
+  .fp2-page .fp2-lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* FAQ Chevron rotation animation styling */
+.fp2-page .fp2-faq-chevron {
+  transition: transform 0.3s ease;
+}
+.fp2-page .fp2-faq-btn.active .fp2-faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Pricing cards styling */
+.fp2-page .fp2-pricing-card {
+  background: #ffffff;
+  border: 1px solid var(--fp2-outline);
+  border-radius: var(--fp2-radius-2xl);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: var(--fp2-shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fp2-page .fp2-pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fp2-shadow-md);
+}
+.fp2-page .fp2-pricing-card-featured {
+  border-color: var(--fp2-secondary);
+  box-shadow: var(--fp2-shadow-md);
+}
+.fp2-page .fp2-pricing-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Agent footer padding and background */
+.fp2-page .fp2-section-agent-footer {
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
+  background-color: var(--fp2-surface);
+}
+
+/* Sticky card for property form */
+.fp2-page .fp2-sticky-card {
+  position: sticky;
+  top: 2rem;
+  background: #ffffff;
+  border-radius: var(--fp2-radius-xl);
+  padding: 2rem;
+  border: 1px solid var(--fp2-outline);
+  box-shadow: var(--fp2-shadow-card);
+}
+
+/* Hover opacity utility */
+.fp2-page .fp2-hover-opacity {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.fp2-page .fp2-hover-opacity:hover {
+  opacity: 1;
+}
