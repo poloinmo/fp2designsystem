@@ -57,26 +57,26 @@
   --fp2-transition-base: 0.3s ease;
   --fp2-transition-slow: 0.5s ease;
   --fp2-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Reset y Blogger Patch
 =========================================================*/
+
+
 .fp2-page *,
 .fp2-page *::before,
 .fp2-page *::after {
   box-sizing: border-box;
-}
+}/* Ocultar estructura nativa de Blogger */
 
-/* Ocultar estructura nativa de Blogger */
+
 .post-header, .post-title, .entry-title, .post-footer, .post-bottom-meta,
 .temas-relacionados-block, .seguir-leyendo-block, #top-action-bar-template,
 #bottom-action-bar-template, .blog-post-comments, #sidebar-right-1,
 .post-sidebar, .author-profile, .share-buttons-container, .post-share,
 .editorial-column-sidebar, .editorial-column-third,
 .post-labels, .post-labels-container, .breadcrumbs, .label-info, .status-msg-wrap,
-.byline, .byline-label, .post-header-line-1, .bg-post-labels,
+.fp2-page .fp2-byline, .byline-label, .post-header-line-1, .bg-post-labels,
 .post-meta, .comment-reply,
 h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   display: none !important;
@@ -96,18 +96,18 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   max-width: 100% !important;
 }
 
-.articulo-nuevo {
+.fp2-page .fp2-articulo-nuevo {
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
   max-width: 100% !important;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Base y Tipografía
 =========================================================*/
+
+
 .fp2-page {
   font-family: var(--fp2-font-sans);
   color: var(--fp2-on-surface);
@@ -124,217 +124,217 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 
 .fp2-page img { display: block; max-width: 100%; }
 .fp2-page a { text-decoration: none; color: inherit; }
-.fp2-page button { font-family: inherit; }
-
-/*=========================================================
+.fp2-page button { font-family: inherit; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Display y Position
 =========================================================*/
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed; }
-.sticky { position: sticky; }
-.flex { display: flex; }
-.inline-flex { display: inline-flex; }
-.inline-block { display: inline-block; }
-.grid { display: grid; }
-.hidden { display: none; }
-.block { display: block; }
 
-.inset-0 { inset: 0; }
-.inset-y-0 { top: 0; bottom: 0; }
-.top-0 { top: 0; }
-.right-0 { right: 0; }
-.bottom-0 { bottom: 0; }
-.left-0 { left: 0; }
 
-/*=========================================================
+.fp2-page .fp2-relative { position: relative; }
+.fp2-page .fp2-absolute { position: absolute; }
+.fp2-page .fp2-fixed { position: fixed; }
+.fp2-page .fp2-sticky { position: sticky; }
+.fp2-page .fp2-flex { display: flex; }
+.fp2-page .fp2-inline-flex { display: inline-flex; }
+.fp2-page .fp2-inline-block { display: inline-block; }
+.fp2-page .fp2-grid { display: grid; }
+.fp2-page .fp2-hidden { display: none; }
+.fp2-page .fp2-block { display: block; }
+
+.fp2-page .fp2-inset-0 { inset: 0; }
+.fp2-page .fp2-inset-y-0 { top: 0; bottom: 0; }
+.fp2-page .fp2-top-0 { top: 0; }
+.fp2-page .fp2-right-0 { right: 0; }
+.fp2-page .fp2-bottom-0 { bottom: 0; }
+.fp2-page .fp2-left-0 { left: 0; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Flexbox
 =========================================================*/
-.items-center { align-items: center; }
-.items-start { align-items: flex-start; }
-.items-stretch { align-items: stretch; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.justify-around { justify-content: space-around; }
-.flex-col { flex-direction: column; }
-.flex-wrap { flex-wrap: wrap; }
-.flex-1 { flex: 1 1 0%; }
-.flex-grow { flex-grow: 1; }
-.shrink-0 { flex-shrink: 0; }
 
-/*=========================================================
+
+.fp2-page .fp2-items-center { align-items: center; }
+.fp2-page .fp2-items-start { align-items: flex-start; }
+.fp2-page .fp2-items-stretch { align-items: stretch; }
+.fp2-page .fp2-justify-center { justify-content: center; }
+.fp2-page .fp2-justify-between { justify-content: space-between; }
+.fp2-page .fp2-justify-around { justify-content: space-around; }
+.fp2-page .fp2-flex-col { flex-direction: column; }
+.fp2-page .fp2-flex-wrap { flex-wrap: wrap; }
+.fp2-page .fp2-flex-1 { flex: 1 1 0%; }
+.fp2-page .fp2-flex-grow { flex-grow: 1; }
+.fp2-page .fp2-shrink-0 { flex-shrink: 0; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Grid
 =========================================================*/
-.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
-.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
 
-.gap-1 { gap: 0.25rem; }
-.gap-2 { gap: 0.5rem; }
-.gap-3 { gap: 0.75rem; }
-.gap-4 { gap: 1rem; }
-.gap-5 { gap: 1.25rem; }
-.gap-6 { gap: 1.5rem; }
-.gap-8 { gap: 2rem; }
-.gap-10 { gap: 2.5rem; }
-.gap-12 { gap: 3rem; }
-.gap-gutter { gap: var(--fp2-gutter); }
-.gap-x-2 { column-gap: 0.5rem; }
-.gap-x-4 { column-gap: 1rem; }
-.gap-y-4 { row-gap: 1rem; }
-.gap-y-8 { row-gap: 2rem; }
 
-/*=========================================================
+.fp2-page .fp2-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.fp2-page .fp2-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.fp2-page .fp2-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+.fp2-page .fp2-gap-1 { gap: 0.25rem; }
+.fp2-page .fp2-gap-2 { gap: 0.5rem; }
+.fp2-page .fp2-gap-3 { gap: 0.75rem; }
+.fp2-page .fp2-gap-4 { gap: 1rem; }
+.fp2-page .fp2-gap-5 { gap: 1.25rem; }
+.fp2-page .fp2-gap-6 { gap: 1.5rem; }
+.fp2-page .fp2-gap-8 { gap: 2rem; }
+.fp2-page .fp2-gap-10 { gap: 2.5rem; }
+.fp2-page .fp2-gap-12 { gap: 3rem; }
+.fp2-page .fp2-gap-gutter { gap: var(--fp2-gutter); }
+.fp2-page .fp2-gap-x-2 { column-gap: 0.5rem; }
+.fp2-page .fp2-gap-x-4 { column-gap: 1rem; }
+.fp2-page .fp2-gap-y-4 { row-gap: 1rem; }
+.fp2-page .fp2-gap-y-8 { row-gap: 2rem; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Espaciado
 =========================================================*/
-.p-2 { padding: 0.5rem; }
-.p-3 { padding: 0.75rem; }
-.p-4 { padding: 1rem; }
-.p-6 { padding: 1.5rem; }
-.p-8 { padding: 2rem; }
-.p-10 { padding: 2.5rem; }
-.px-4 { padding-left: 1rem; padding-right: 1rem; }
-.px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-.px-8 { padding-left: 2rem; padding-right: 2rem; }
-.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
-.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
-.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-.py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
-.pt-2 { padding-top: 0.5rem; }
-.pt-4 { padding-top: 1rem; }
-.pt-6 { padding-top: 1.5rem; }
-.pb-1 { padding-bottom: 0.25rem; }
-.pb-4 { padding-bottom: 1rem; }
-.pb-5 { padding-bottom: 1.25rem; }
-.pl-2 { padding-left: 0.5rem; }
-.pl-4 { padding-left: 1rem; }
-.pl-5 { padding-left: 1.25rem; }
-.pl-12 { padding-left: 3rem; }
-.pr-3 { padding-right: 0.75rem; }
-.pr-4 { padding-right: 1rem; }
-.pr-8 { padding-right: 2rem; }
-.pr-10 { padding-right: 2.5rem; }
 
-.m-auto { margin: auto; }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.mb-1 { margin-bottom: 0.25rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mb-8 { margin-bottom: 2rem; }
-.mb-10 { margin-bottom: 2.5rem; }
-.mb-16 { margin-bottom: 4rem; }
-.mt-1 { margin-top: 0.25rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mt-4 { margin-top: 1rem; }
-.mt-6 { margin-top: 1.5rem; }
-.mt-auto { margin-top: auto; }
 
-.space-y-2 > * + * { margin-top: 0.5rem; }
-.space-y-3 > * + * { margin-top: 0.75rem; }
-.space-y-4 > * + * { margin-top: 1rem; }
-.space-y-6 > * + * { margin-top: 1.5rem; }
-.space-y-8 > * + * { margin-top: 2rem; }
-.space-y-10 > * + * { margin-top: 2.5rem; }
+.fp2-page .fp2-p-2 { padding: 0.5rem; }
+.fp2-page .fp2-p-3 { padding: 0.75rem; }
+.fp2-page .fp2-p-4 { padding: 1rem; }
+.fp2-page .fp2-p-6 { padding: 1.5rem; }
+.fp2-page .fp2-p-8 { padding: 2rem; }
+.fp2-page .fp2-p-10 { padding: 2.5rem; }
+.fp2-page .fp2-px-4 { padding-left: 1rem; padding-right: 1rem; }
+.fp2-page .fp2-px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+.fp2-page .fp2-px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.fp2-page .fp2-px-8 { padding-left: 2rem; padding-right: 2rem; }
+.fp2-page .fp2-px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.fp2-page .fp2-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.fp2-page .fp2-py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.fp2-page .fp2-py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.fp2-page .fp2-py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.fp2-page .fp2-pt-2 { padding-top: 0.5rem; }
+.fp2-page .fp2-pt-4 { padding-top: 1rem; }
+.fp2-page .fp2-pt-6 { padding-top: 1.5rem; }
+.fp2-page .fp2-pb-1 { padding-bottom: 0.25rem; }
+.fp2-page .fp2-pb-4 { padding-bottom: 1rem; }
+.fp2-page .fp2-pb-5 { padding-bottom: 1.25rem; }
+.fp2-page .fp2-pl-2 { padding-left: 0.5rem; }
+.fp2-page .fp2-pl-4 { padding-left: 1rem; }
+.fp2-page .fp2-pl-5 { padding-left: 1.25rem; }
+.fp2-page .fp2-pl-12 { padding-left: 3rem; }
+.fp2-page .fp2-pr-3 { padding-right: 0.75rem; }
+.fp2-page .fp2-pr-4 { padding-right: 1rem; }
+.fp2-page .fp2-pr-8 { padding-right: 2rem; }
+.fp2-page .fp2-pr-10 { padding-right: 2.5rem; }
 
-/*=========================================================
+.fp2-page .fp2-m-auto { margin: auto; }
+.fp2-page .fp2-mx-auto { margin-left: auto; margin-right: auto; }
+.fp2-page .fp2-mb-1 { margin-bottom: 0.25rem; }
+.fp2-page .fp2-mb-2 { margin-bottom: 0.5rem; }
+.fp2-page .fp2-mb-4 { margin-bottom: 1rem; }
+.fp2-page .fp2-mb-6 { margin-bottom: 1.5rem; }
+.fp2-page .fp2-mb-8 { margin-bottom: 2rem; }
+.fp2-page .fp2-mb-10 { margin-bottom: 2.5rem; }
+.fp2-page .fp2-mb-16 { margin-bottom: 4rem; }
+.fp2-page .fp2-mt-1 { margin-top: 0.25rem; }
+.fp2-page .fp2-mt-2 { margin-top: 0.5rem; }
+.fp2-page .fp2-mt-4 { margin-top: 1rem; }
+.fp2-page .fp2-mt-6 { margin-top: 1.5rem; }
+.fp2-page .fp2-mt-auto { margin-top: auto; }
+
+.fp2-page .fp2-space-y-2 > * + * { margin-top: 0.5rem; }
+.fp2-page .fp2-space-y-3 > * + * { margin-top: 0.75rem; }
+.fp2-page .fp2-space-y-4 > * + * { margin-top: 1rem; }
+.fp2-page .fp2-space-y-6 > * + * { margin-top: 1.5rem; }
+.fp2-page .fp2-space-y-8 > * + * { margin-top: 2rem; }
+.fp2-page .fp2-space-y-10 > * + * { margin-top: 2.5rem; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Sizing
 =========================================================*/
-.w-full { width: 100%; }
-.h-full { height: 100%; }
-.w-2 { width: 0.5rem; } .h-2 { height: 0.5rem; }
-.w-5 { width: 1.25rem; } .h-5 { height: 1.25rem; }
-.w-6 { width: 1.5rem; } .h-6 { height: 1.5rem; }
-.w-7 { width: 1.75rem; } .h-7 { height: 1.75rem; }
-.w-8 { width: 2rem; } .h-8 { height: 2rem; }
-.w-9 { width: 2.25rem; } .h-9 { height: 2.25rem; }
-.w-10 { width: 2.5rem; } .h-10 { height: 2.5rem; }
-.w-12 { width: 3rem; } .h-12 { height: 3rem; }
-.w-14 { width: 3.5rem; } .h-14 { height: 3.5rem; }
-.w-16 { width: 4rem; } .h-16 { height: 4rem; }
-.w-24 { width: 6rem; } .h-24 { height: 6rem; }
-.w-32 { width: 8rem; } .h-32 { height: 8rem; }
-.w-64 { width: 16rem; } .h-64 { height: 16rem; }
-.w-72 { width: 18rem; } .h-72 { height: 18rem; }
-.w-96 { width: 24rem; } .h-96 { height: 24rem; }
 
-.max-w-xs { max-width: 20rem; }
-.max-w-sm { max-width: 24rem; }
-.max-w-md { max-width: 28rem; }
-.max-w-lg { max-width: 32rem; }
-.max-w-xl { max-width: 36rem; }
-.max-w-2xl { max-width: 42rem; }
-.max-w-3xl { max-width: 48rem; }
-.max-w-4xl { max-width: 56rem; }
-.max-w-0 { max-width: 0; }
 
-/*=========================================================
+.fp2-page .fp2-w-full { width: 100%; }
+.fp2-page .fp2-h-full { height: 100%; }
+.fp2-page .fp2-w-2 { width: 0.5rem; } .fp2-page .fp2-h-2 { height: 0.5rem; }
+.fp2-page .fp2-w-5 { width: 1.25rem; } .fp2-page .fp2-h-5 { height: 1.25rem; }
+.fp2-page .fp2-w-6 { width: 1.5rem; } .fp2-page .fp2-h-6 { height: 1.5rem; }
+.fp2-page .fp2-w-7 { width: 1.75rem; } .fp2-page .fp2-h-7 { height: 1.75rem; }
+.fp2-page .fp2-w-8 { width: 2rem; } .fp2-page .fp2-h-8 { height: 2rem; }
+.fp2-page .fp2-w-9 { width: 2.25rem; } .fp2-page .fp2-h-9 { height: 2.25rem; }
+.fp2-page .fp2-w-10 { width: 2.5rem; } .fp2-page .fp2-h-10 { height: 2.5rem; }
+.fp2-page .fp2-w-12 { width: 3rem; } .fp2-page .fp2-h-12 { height: 3rem; }
+.fp2-page .fp2-w-14 { width: 3.5rem; } .fp2-page .fp2-h-14 { height: 3.5rem; }
+.fp2-page .fp2-w-16 { width: 4rem; } .fp2-page .fp2-h-16 { height: 4rem; }
+.fp2-page .fp2-w-24 { width: 6rem; } .fp2-page .fp2-h-24 { height: 6rem; }
+.fp2-page .fp2-w-32 { width: 8rem; } .fp2-page .fp2-h-32 { height: 8rem; }
+.fp2-page .fp2-w-64 { width: 16rem; } .fp2-page .fp2-h-64 { height: 16rem; }
+.fp2-page .fp2-w-72 { width: 18rem; } .fp2-page .fp2-h-72 { height: 18rem; }
+.fp2-page .fp2-w-96 { width: 24rem; } .fp2-page .fp2-h-96 { height: 24rem; }
+
+.fp2-page .fp2-max-w-xs { max-width: 20rem; }
+.fp2-page .fp2-max-w-sm { max-width: 24rem; }
+.fp2-page .fp2-max-w-md { max-width: 28rem; }
+.fp2-page .fp2-max-w-lg { max-width: 32rem; }
+.fp2-page .fp2-max-w-xl { max-width: 36rem; }
+.fp2-page .fp2-max-w-2xl { max-width: 42rem; }
+.fp2-page .fp2-max-w-3xl { max-width: 48rem; }
+.fp2-page .fp2-max-w-4xl { max-width: 56rem; }
+.fp2-page .fp2-max-w-0 { max-width: 0; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Custom Spacing Tokens
 =========================================================*/
-.px-margin-mobile { padding-left: var(--fp2-margin-mobile); padding-right: var(--fp2-margin-mobile); }
-.py-stack-lg { padding-top: var(--fp2-stack-lg); padding-bottom: var(--fp2-stack-lg); }
-.space-y-stack-md > * + * { margin-top: var(--fp2-stack-md); }
-.max-w-container-max { max-width: var(--fp2-container-max); }
-.gap-gutter { gap: var(--fp2-gutter); }
 
-/*=========================================================
+
+.fp2-page .fp2-px-margin-mobile { padding-left: var(--fp2-margin-mobile); padding-right: var(--fp2-margin-mobile); }
+.fp2-page .fp2-py-stack-lg { padding-top: var(--fp2-stack-lg); padding-bottom: var(--fp2-stack-lg); }
+.fp2-page .fp2-space-y-stack-md > * + * { margin-top: var(--fp2-stack-md); }
+.fp2-page .fp2-max-w-container-max { max-width: var(--fp2-container-max); }
+.fp2-page .fp2-gap-gutter { gap: var(--fp2-gutter); }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Tipografía
 =========================================================*/
-.text-xs { font-size: 0.75rem; line-height: 1rem; }
-.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
-.text-base { font-size: 1rem; line-height: 1.5rem; }
-.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
-.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-.text-2xl { font-size: 1.5rem; line-height: 2rem; }
-.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
-.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
-.text-5xl { font-size: 3rem; line-height: 1; }
-.text-6xl { font-size: 3.75rem; line-height: 1; }
-.text-7xl { font-size: 4.5rem; line-height: 1; }
+
+
+.fp2-page .fp2-text-xs { font-size: 0.75rem; line-height: 1rem; }
+.fp2-page .fp2-text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.fp2-page .fp2-text-base { font-size: 1rem; line-height: 1.5rem; }
+.fp2-page .fp2-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.fp2-page .fp2-text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.fp2-page .fp2-text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.fp2-page .fp2-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.fp2-page .fp2-text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.fp2-page .fp2-text-5xl { font-size: 3rem; line-height: 1; }
+.fp2-page .fp2-text-6xl { font-size: 3.75rem; line-height: 1; }
+.fp2-page .fp2-text-7xl { font-size: 4.5rem; line-height: 1; }
 .fp2-text-hero { font-size: 5rem; line-height: 1; }
 
-.font-bold { font-weight: 700; }
-.font-medium { font-weight: 500; }
-.font-normal { font-weight: 400; }
-.font-black { font-weight: 900; }
+.fp2-page .fp2-font-bold { font-weight: 700; }
+.fp2-page .fp2-font-medium { font-weight: 500; }
+.fp2-page .fp2-font-normal { font-weight: 400; }
+.fp2-page .fp2-font-black { font-weight: 900; }
 
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.uppercase { text-transform: uppercase; }
-.italic { font-style: italic; }
-.tracking-tighter { letter-spacing: -0.05em; }
-.tracking-wider { letter-spacing: 0.05em; }
-.tracking-widest { letter-spacing: 0.1em; }
+.fp2-page .fp2-text-center { text-align: center; }
+.fp2-page .fp2-text-left { text-align: left; }
+.fp2-page .fp2-text-right { text-align: right; }
+.fp2-page .fp2-uppercase { text-transform: uppercase; }
+.fp2-page .fp2-italic { font-style: italic; }
+.fp2-page .fp2-tracking-tighter { letter-spacing: -0.05em; }
+.fp2-page .fp2-tracking-wider { letter-spacing: 0.05em; }
+.fp2-page .fp2-tracking-widest { letter-spacing: 0.1em; }
 .fp2-tracking-label { letter-spacing: 0.2em; }
-.leading-none { line-height: 1; }
-.leading-tight { line-height: 1.25; }
-.leading-relaxed { line-height: 1.625; }
-.whitespace-nowrap { white-space: nowrap; }
-.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.break-all { word-break: break-all; }
-.not-prose { all: revert; font-family: var(--fp2-font-sans); }
-.select-none { user-select: none; }
-
-/*=========================================================
+.fp2-page .fp2-leading-none { line-height: 1; }
+.fp2-page .fp2-leading-tight { line-height: 1.25; }
+.fp2-page .fp2-leading-relaxed { line-height: 1.625; }
+.fp2-page .fp2-whitespace-nowrap { white-space: nowrap; }
+.fp2-page .fp2-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fp2-page .fp2-break-all { word-break: break-all; }
+.fp2-page .fp2-not-prose { all: revert; font-family: var(--fp2-font-sans); }
+.fp2-page .fp2-select-none { user-select: none; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Colores
-=========================================================*/
-/* Text */
-.text-primary { color: var(--fp2-primary); }
-.text-secondary { color: var(--fp2-secondary); }
-.text-on-surface { color: var(--fp2-on-surface); }
-.text-on-surface-variant { color: var(--fp2-on-surface-variant); }
-.text-white { color: #ffffff; }
+=========================================================*//* Text */
+
+
+
+.fp2-page .fp2-text-primary { color: var(--fp2-primary); }
+.fp2-page .fp2-text-secondary { color: var(--fp2-secondary); }
+.fp2-page .fp2-text-on-surface { color: var(--fp2-on-surface); }
+.fp2-page .fp2-text-on-surface-variant { color: var(--fp2-on-surface-variant); }
+.fp2-page .fp2-text-white { color: #ffffff; }
 .fp2-text-primary { color: var(--fp2-primary); }
 .fp2-text-secondary { color: var(--fp2-secondary); }
 .fp2-text-on-surface-variant { color: var(--fp2-on-surface-variant); }
@@ -343,15 +343,15 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-text-gray-500 { color: #6b7280; }
 .fp2-text-gray-600 { color: #4b5563; }
 .fp2-text-success { color: #4ade80; }
-.fp2-text-error { color: #f87171; }
+.fp2-text-error { color: #f87171; }/* Background */
 
-/* Background */
-.bg-primary { background-color: var(--fp2-primary); }
-.bg-secondary { background-color: var(--fp2-secondary); }
-.bg-surface { background-color: var(--fp2-surface); }
-.bg-surface-alt { background-color: var(--fp2-surface-alt); }
-.bg-dark-slate { background-color: var(--fp2-dark-slate); }
-.bg-white { background-color: #ffffff; }
+
+.fp2-bg-primary { background-color: var(--fp2-primary); }
+.fp2-bg-secondary { background-color: var(--fp2-secondary); }
+.fp2-bg-surface { background-color: var(--fp2-surface); }
+.fp2-bg-surface-alt { background-color: var(--fp2-surface-alt); }
+.fp2-bg-dark-slate { background-color: var(--fp2-dark-slate); }
+.fp2-bg-white { background-color: #ffffff; }
 .fp2-bg-whatsapp { background-color: var(--fp2-whatsapp); }
 .fp2-bg-white-5 { background-color: rgba(255,255,255,0.05); }
 .fp2-bg-white-10 { background-color: rgba(255,255,255,0.1); }
@@ -361,97 +361,97 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-bg-purple-10 { background-color: rgba(168,85,247,0.1); }
 .fp2-bg-gray-50 { background-color: #f9fafb; }
 .fp2-bg-success-10 { background-color: rgba(34,197,94,0.1); }
-.fp2-bg-error-10 { background-color: rgba(239,68,68,0.1); }
-
-/*=========================================================
+.fp2-bg-error-10 { background-color: rgba(239,68,68,0.1); }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Bordes
 =========================================================*/
-.border { border: 1px solid var(--fp2-outline); }
-.border-y { border-top: 1px solid var(--fp2-outline); border-bottom: 1px solid var(--fp2-outline); }
-.border-t { border-top: 1px solid var(--fp2-outline); }
-.border-b { border-bottom: 1px solid var(--fp2-outline); }
-.border-r { border-right: 1px solid var(--fp2-outline); }
-.border-outline { border-color: var(--fp2-outline); }
-.border-secondary { border-color: var(--fp2-secondary); }
+
+
+.fp2-page .fp2-border { border: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-y { border-top: 1px solid var(--fp2-outline); border-bottom: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-t { border-top: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-b { border-bottom: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-r { border-right: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-outline { border-color: var(--fp2-outline); }
+.fp2-page .fp2-border-secondary { border-color: var(--fp2-secondary); }
 .fp2-border-white-10 { border: 1px solid rgba(255,255,255,0.1); }
 .fp2-border-secondary-20 { border: 1px solid rgba(171,0,48,0.2); }
 .fp2-border-secondary-30 { border: 1px solid rgba(171,0,48,0.3); }
 .fp2-border-secondary-50 { border: 1px solid rgba(171,0,48,0.5); }
 .fp2-border-success-20 { border: 1px solid rgba(34,197,94,0.2); }
 .fp2-border-error-20 { border: 1px solid rgba(239,68,68,0.2); }
-.border-2 { border-width: 2px; }
-.border-4 { border-width: 4px; }
-.border-none { border: none; }
+.fp2-page .fp2-border-2 { border-width: 2px; }
+.fp2-page .fp2-border-4 { border-width: 4px; }
+.fp2-page .fp2-border-none { border: none; }
 
-.rounded-sm { border-radius: var(--fp2-radius-sm); }
-.rounded-md { border-radius: var(--fp2-radius-md); }
-.rounded-lg { border-radius: var(--fp2-radius-lg); }
-.rounded-xl { border-radius: var(--fp2-radius-xl); }
-.rounded-2xl { border-radius: var(--fp2-radius-2xl); }
-.rounded-3xl { border-radius: var(--fp2-radius-3xl); }
-.rounded-full { border-radius: var(--fp2-radius-full); }
-
-/*=========================================================
+.fp2-page .fp2-rounded-sm { border-radius: var(--fp2-radius-sm); }
+.fp2-page .fp2-rounded-md { border-radius: var(--fp2-radius-md); }
+.fp2-page .fp2-rounded-lg { border-radius: var(--fp2-radius-lg); }
+.fp2-page .fp2-rounded-xl { border-radius: var(--fp2-radius-xl); }
+.fp2-page .fp2-rounded-2xl { border-radius: var(--fp2-radius-2xl); }
+.fp2-page .fp2-rounded-3xl { border-radius: var(--fp2-radius-3xl); }
+.fp2-page .fp2-rounded-full { border-radius: var(--fp2-radius-full); }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Sombras y Efectos
 =========================================================*/
-.shadow-sm { box-shadow: var(--fp2-shadow-sm); }
-.shadow-md { box-shadow: var(--fp2-shadow-md); }
-.shadow-lg { box-shadow: var(--fp2-shadow-lg); }
-.shadow-2xl { box-shadow: var(--fp2-shadow-2xl); }
+
+
+.fp2-page .fp2-shadow-sm { box-shadow: var(--fp2-shadow-sm); }
+.fp2-page .fp2-shadow-md { box-shadow: var(--fp2-shadow-md); }
+.fp2-page .fp2-shadow-lg { box-shadow: var(--fp2-shadow-lg); }
+.fp2-page .fp2-shadow-2xl { box-shadow: var(--fp2-shadow-2xl); }
 .fp2-shadow-glow { box-shadow: var(--fp2-shadow-glow); }
 .fp2-shadow-glow-lg { box-shadow: var(--fp2-shadow-glow-lg); }
 .fp2-shadow-up { box-shadow: 0 -10px 20px rgba(0,0,0,0.05); }
 .fp2-shadow-card { box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
 
-.overflow-hidden { overflow: hidden; }
-.overflow-x-auto { overflow-x: auto; }
-.backdrop-blur-sm { backdrop-filter: blur(4px); }
-.backdrop-blur-md { backdrop-filter: blur(12px); }
-.backdrop-blur-3xl { backdrop-filter: blur(64px); }
+.fp2-page .fp2-overflow-hidden { overflow: hidden; }
+.fp2-page .fp2-overflow-x-auto { overflow-x: auto; }
+.fp2-page .fp2-backdrop-blur-sm { backdrop-filter: blur(4px); }
+.fp2-page .fp2-backdrop-blur-md { backdrop-filter: blur(12px); }
+.fp2-page .fp2-backdrop-blur-3xl { backdrop-filter: blur(64px); }
 .fp2-blur-3xl { filter: blur(64px); }
 .fp2-blur-2xl { filter: blur(40px); }
 .fp2-blur-80 { filter: blur(80px); }
-.object-cover { object-fit: cover; }
-.object-contain { object-fit: contain; }
+.fp2-page .fp2-object-cover { object-fit: cover; }
+.fp2-page .fp2-object-contain { object-fit: contain; }
 
-.z-0 { z-index: 0; }
-.z-10 { z-index: 10; }
-.z-20 { z-index: 20; }
-.z-40 { z-index: 40; }
-.z-50 { z-index: 50; }
-.-z-10 { z-index: -10; }
+.fp2-page .fp2-z-0 { z-index: 0; }
+.fp2-page .fp2-z-10 { z-index: 10; }
+.fp2-page .fp2-z-20 { z-index: 20; }
+.fp2-page .fp2-z-40 { z-index: 40; }
+.fp2-page .fp2-z-50 { z-index: 50; }
+.fp2-page .fp2--z-10 { z-index: -10; }
 
-.cursor-pointer { cursor: pointer; }
-.pointer-events-none { pointer-events: none; }
-.outline-none { outline: none; }
-.resize-none { resize: none; }
-.appearance-none { appearance: none; }
+.fp2-page .fp2-cursor-pointer { cursor: pointer; }
+.fp2-page .fp2-pointer-events-none { pointer-events: none; }
+.fp2-page .fp2-outline-none { outline: none; }
+.fp2-page .fp2-resize-none { resize: none; }
+.fp2-page .fp2-appearance-none { appearance: none; }
 
-.opacity-0 { opacity: 0; }
-.opacity-30 { opacity: 0.3; }
-.opacity-50 { opacity: 0.5; }
-.opacity-70 { opacity: 0.7; }
-
-/*=========================================================
+.fp2-page .fp2-opacity-0 { opacity: 0; }
+.fp2-page .fp2-opacity-30 { opacity: 0.3; }
+.fp2-page .fp2-opacity-50 { opacity: 0.5; }
+.fp2-page .fp2-opacity-70 { opacity: 0.7; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Transiciones
 =========================================================*/
-.transition-all { transition: all var(--fp2-transition-base); }
-.transition-colors { transition: color var(--fp2-transition-fast), background-color var(--fp2-transition-fast), border-color var(--fp2-transition-fast); }
-.transition-transform { transition: transform var(--fp2-transition-base); }
-.duration-300 { transition-duration: 0.3s; }
 
-/*=========================================================
+
+.fp2-page .fp2-transition-all { transition: all var(--fp2-transition-base); }
+.fp2-page .fp2-transition-colors { transition: color var(--fp2-transition-fast), background-color var(--fp2-transition-fast), border-color var(--fp2-transition-fast); }
+.fp2-page .fp2-transition-transform { transition: transform var(--fp2-transition-base); }
+.fp2-page .fp2-duration-300 { transition-duration: 0.3s; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — CTA Glow Button
 =========================================================*/
-.cta-glow {
+
+
+.fp2-page .fp2-cta-glow {
   position: relative;
   overflow: hidden;
 }
-.cta-glow::after {
+.fp2-page .fp2-cta-glow::after {
   content: '';
   position: absolute;
   top: -50%; left: -50%;
@@ -517,24 +517,24 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   cursor: pointer;
   transition: all var(--fp2-transition-fast);
 }
-.fp2-btn-outline:hover { background: var(--fp2-primary); color: #fff; }
-
-/*=========================================================
+.fp2-btn-outline:hover { background: var(--fp2-primary); color: #fff; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Bento Card
 =========================================================*/
-.bento-card {
+
+
+.fp2-page .fp2-bento-card {
   transition: transform 0.3s var(--fp2-bounce), box-shadow 0.3s ease;
 }
-.bento-card:hover {
+.fp2-page .fp2-bento-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Dark Panel
 =========================================================*/
+
+
 .fp2-dark-panel {
   background: var(--fp2-dark-slate);
   border-radius: var(--fp2-radius-3xl);
@@ -551,12 +551,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   border-radius: 50%;
   filter: blur(64px);
   pointer-events: none;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Glass Card (dentro de paneles oscuros)
 =========================================================*/
+
+
 .fp2-glass-card {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(4px);
@@ -567,12 +567,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   flex-direction: column;
   transition: background-color 0.3s ease;
 }
-.fp2-glass-card:hover { background: rgba(255,255,255,0.1); }
-
-/*=========================================================
+.fp2-glass-card:hover { background: rgba(255,255,255,0.1); }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Icon Box
 =========================================================*/
+
+
 .fp2-icon-box {
   width: 3.5rem;
   height: 3.5rem;
@@ -583,12 +583,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   flex-shrink: 0;
 }
 .fp2-icon-box-lg { width: 4rem; height: 4rem; }
-.fp2-icon-box-round { border-radius: 50%; }
-
-/*=========================================================
+.fp2-icon-box-round { border-radius: 50%; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — FAQ Accordion
 =========================================================*/
+
+
 .fp2-faq-item {
   background: #fff;
   border-radius: var(--fp2-radius-2xl);
@@ -625,12 +625,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   color: var(--fp2-on-surface-variant);
   font-size: 1rem;
   line-height: 1.625;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Formularios (dark theme)
 =========================================================*/
+
+
 .fp2-form-dark {
   background: var(--fp2-dark-slate);
   padding: 2rem;
@@ -662,9 +662,9 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-input-dark:focus {
   border-color: var(--fp2-secondary);
   background: rgba(255,255,255,0.1);
-}
+}/* Light Form (Prop-v2) */
 
-/* Light Form (Prop-v2) */
+
 .fp2-input-light {
   width: 100%;
   background: var(--fp2-surface-alt);
@@ -692,12 +692,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   color: #6b7280;
 }
 .fp2-input-icon-y { top: 0; bottom: 0; }
-.fp2-input-icon-top { top: 1rem; }
-
-/*=========================================================
+.fp2-input-icon-top { top: 1rem; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Alert Messages
 =========================================================*/
+
+
 .fp2-alert {
   text-align: center;
   padding: 1rem;
@@ -727,12 +727,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   background: #fee2e2;
   border: 1px solid #fecaca;
   color: #b91c1c;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Agent Footer
 =========================================================*/
+
+
 .fp2-avatar-ring {
   width: 8rem;
   height: 8rem;
@@ -755,12 +755,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   border: 4px solid #fff;
   box-shadow: var(--fp2-shadow-lg);
   animation: fp2-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — WhatsApp Float + Mobile Bar
 =========================================================*/
+
+
 .fp2-wa-float {
   position: fixed;
   bottom: 2rem;
@@ -801,12 +801,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Slider (Prop)
 =========================================================*/
+
+
 .fp2-slider {
   position: relative;
   width: 100%;
@@ -875,12 +875,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   padding: 3px 9px;
   border-radius: var(--fp2-radius-full);
   z-index: 4;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Tabs (Prop)
 =========================================================*/
+
+
 .fp2-tabs {
   display: flex;
   gap: 10px;
@@ -929,12 +929,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-tab-disabled i { color: #9ca3af; width: 18px; height: 18px; }
 
 .fp2-tab-content { display: none; }
-.fp2-tab-content.visible { display: block; }
-
-/*=========================================================
+.fp2-tab-content.visible { display: block; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Accordion Bloques (Prop)
 =========================================================*/
+
+
 .fp2-accordion-item {
   border: 1px solid #e5e7eb;
   border-radius: var(--fp2-radius-lg);
@@ -978,12 +978,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   max-height: 2000px;
   padding: 1.5rem;
   border-top: 1px solid #e5e7eb;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Video/Embed Container
 =========================================================*/
+
+
 .fp2-embed {
   width: 100%;
   aspect-ratio: 16/9;
@@ -993,12 +993,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   margin-bottom: 1rem;
   border: 1px solid #e5e7eb;
 }
-.fp2-embed iframe { width: 100%; height: 100%; border: none; }
-
-/*=========================================================
+.fp2-embed iframe { width: 100%; height: 100%; border: none; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Property Cards (Similar Properties)
 =========================================================*/
+
+
 .fp2-prop-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; }
 .fp2-prop-card {
   background: #fff;
@@ -1035,12 +1035,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-prop-type { font-size: 0.75rem; color: #6b7280; margin-bottom: 1rem; }
 .fp2-prop-desc { font-size: 0.875rem; color: #6b7280; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .fp2-prop-more { margin-top: auto; padding-top: 1rem; color: var(--fp2-secondary); font-weight: 700; font-size: 0.875rem; text-align: left; background: none; border: none; cursor: pointer; display: inline-block; }
-.fp2-prop-more:hover { text-decoration: underline; }
-
-/*=========================================================
+.fp2-prop-more:hover { text-decoration: underline; }/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Pricing Cards
 =========================================================*/
+
+
 .fp2-pricing-badge {
   position: absolute;
   top: 0;
@@ -1054,12 +1054,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Social Link Card
 =========================================================*/
+
+
 .fp2-social-card {
   display: flex;
   align-items: center;
@@ -1073,12 +1073,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-social-card:hover {
   border-color: rgba(171,0,48,0.5);
   box-shadow: var(--fp2-shadow-md);
-}
-
-/*=========================================================
+}/*=========================================================
   FP2 DESIGN SYSTEM
   Componentes — Share Buttons
 =========================================================*/
+
+
 .fp2-share-menu {
   position: absolute;
   right: 0;
@@ -1112,12 +1112,12 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   justify-content: center;
   transition: all var(--fp2-transition-fast);
 }
-.fp2-share-btn:hover { background: var(--fp2-secondary); color: #fff; }
-
-/*=========================================================
+.fp2-share-btn:hover { background: var(--fp2-secondary); color: #fff; }/*=========================================================
   FP2 DESIGN SYSTEM
   Animaciones
 =========================================================*/
+
+
 @keyframes fp2-glow-move {
   0% { transform: translateX(-100%) rotate(45deg); }
   100% { transform: translateX(100%) rotate(45deg); }
@@ -1140,133 +1140,125 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
   to { transform: rotate(360deg); }
 }
 
-.animate-blob { animation: fp2-blob 7s infinite; }
-.animation-delay-2000 { animation-delay: 2s; }
-.animate-pulse { animation: fp2-pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
-.animate-spin { animation: fp2-spin 1s linear infinite; }
-.fp2-rotate-180 { transform: rotate(180deg); }
+.fp2-page .fp2-animate-blob { animation: fp2-blob 7s infinite; }
+.fp2-page .fp2-animation-delay-2000 { animation-delay: 2s; }
+.fp2-page .fp2-animate-pulse { animation: fp2-pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+.fp2-page .fp2-animate-spin { animation: fp2-spin 1s linear infinite; }
+.fp2-rotate-180 { transform: rotate(180deg); }/* Hero Blob Decorators */
 
-/* Hero Blob Decorators */
+
 .fp2-blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(64px);
   pointer-events: none;
-}
+}/* Hero Layout */
 
-/* Hero Layout */
+
 .fp2-hero-height { min-height: 90vh; }
-.fp2-hero-height-sm { min-height: 85vh; }
-
-/*=========================================================
+.fp2-hero-height-sm { min-height: 85vh; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Hover States
 =========================================================*/
-.fp2-hover-scale:hover { transform: scale(1.1); }
-.fp2-hover-text-secondary:hover { color: var(--fp2-secondary); }
 
-/* Group hover patterns */
-.group:hover .fp2-group-hover-scale { transform: scale(1.1); }
-.group:hover .fp2-group-hover-rotate { transform: rotate(0deg); }
-.group:hover .fp2-group-hover-bg-secondary { background: var(--fp2-secondary); color: #fff; }
-.group .fp2-group-hover-expand {
+
+.fp2-hover-scale:hover { transform: scale(1.1); }
+.fp2-hover-text-secondary:hover { color: var(--fp2-secondary); }/* Group hover patterns */
+
+
+.fp2-page .group:hover .fp2-group-hover-scale { transform: scale(1.1); }
+.fp2-page .group:hover .fp2-group-hover-rotate { transform: rotate(0deg); }
+.fp2-page .group:hover .fp2-group-hover-bg-secondary { background: var(--fp2-secondary); color: #fff; }
+.fp2-page .group .fp2-group-hover-expand {
   max-width: 0;
   overflow: hidden;
   white-space: nowrap;
   transition: max-width 0.3s ease;
   font-weight: 700;
 }
-.group:hover .fp2-group-hover-expand { max-width: 20rem; }
-
-/*=========================================================
+.fp2-page .group:hover .fp2-group-hover-expand { max-width: 20rem; }/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades — Bootstrap Icons sizing
 =========================================================*/
+
+
 .fp2-page .bi { font-size: 1.25rem; line-height: 1; }
 .fp2-page .fp2-icon-sm .bi { font-size: 1rem; }
 .fp2-page .fp2-icon-lg .bi { font-size: 1.5rem; }
-.fp2-page .fp2-icon-xl .bi { font-size: 2rem; }
-
-/*=========================================================
+.fp2-page .fp2-icon-xl .bi { font-size: 2rem; }/*=========================================================
   FP2 DESIGN SYSTEM
   Responsive — Mobile First
-=========================================================*/
+=========================================================*//* 576px — Small devices */
 
-/* 576px — Small devices */
+
+
+
 @media (min-width: 576px) {
-  .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-}
+  .fp2-page .fp2-sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }}/* 640px */
 
-/* 640px */
+
 @media (min-width: 640px) {
-  .fp2-prop-grid { grid-template-columns: repeat(2, 1fr); }
-}
+  .fp2-prop-grid { grid-template-columns: repeat(2, 1fr); }}/* 768px — Tablets */
 
-/* 768px — Tablets */
+
 @media (min-width: 768px) {
-  .md\:px-margin-desktop { padding-left: var(--fp2-margin-desktop); padding-right: var(--fp2-margin-desktop); }
-  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-  .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
-  .md\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
-  .md\:flex-row { flex-direction: row; }
-  .md\:w-auto { width: auto; }
-  .md\:hidden { display: none; }
+  .fp2-page .fp2-md\:px-margin-desktop { padding-left: var(--fp2-margin-desktop); padding-right: var(--fp2-margin-desktop); }
+  .fp2-page .fp2-md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .fp2-page .fp2-md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .fp2-page .fp2-md\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+  .fp2-page .fp2-md\:flex-row { flex-direction: row; }
+  .fp2-page .fp2-md\:w-auto { width: auto; }
+  .fp2-page .fp2-md\:hidden { display: none; }
   .fp2-dark-panel { padding: 4rem; }
   .fp2-form-dark { padding: 2.5rem; }
-  .fp2-mobile-bar { display: none; }
-}
+  .fp2-mobile-bar { display: none; }}
 
 @media (max-width: 767px) {
   .fp2-slider { aspect-ratio: 4/3; }
-  .fp2-embed { aspect-ratio: 4/3; }
-}
+  .fp2-embed { aspect-ratio: 4/3; }}/* 992px — Desktops */
 
-/* 992px — Desktops */
+
 @media (min-width: 992px) {
-  .lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-  .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
-  .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
-  .lg\:grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
-  .lg\:grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
-  .lg\:col-span-4 { grid-column: span 4; }
-  .lg\:col-span-5 { grid-column: span 5; }
-  .lg\:col-span-7 { grid-column: span 7; }
-  .lg\:col-span-8 { grid-column: span 8; }
-  .lg\:text-left { text-align: left; }
-  .lg\:text-right { text-align: right; }
-  .lg\:text-7xl { font-size: 4.5rem; }
-  .lg\:text-6xl { font-size: 3.75rem; }
-  .lg\:text-5xl { font-size: 3rem; }
-  .lg\:mx-0 { margin-left: 0; margin-right: 0; }
-  .lg\:justify-start { justify-content: flex-start; }
-  .lg\:justify-end { justify-content: flex-end; }
-  .lg\:flex-row { flex-direction: row; }
-  .lg\:aspect-landscape { aspect-ratio: 16/10; }
-  .lg\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
-  .lg\:p-12 { padding: 3rem; }
-  .lg\:p-10 { padding: 2.5rem; }
-  .lg\:p-16 { padding: 4rem; }
-  .lg\:-translate-y-4 { transform: translateY(-1rem); }
-  .fp2-prop-grid { grid-template-columns: repeat(4, 1fr); }
-}
+  .fp2-page .fp2-lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .fp2-page .fp2-lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .fp2-page .fp2-lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .fp2-page .fp2-lg\:grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .fp2-page .fp2-lg\:grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  .fp2-page .fp2-lg\:col-span-4 { grid-column: span 4; }
+  .fp2-page .fp2-lg\:col-span-5 { grid-column: span 5; }
+  .fp2-page .fp2-lg\:col-span-7 { grid-column: span 7; }
+  .fp2-page .fp2-lg\:col-span-8 { grid-column: span 8; }
+  .fp2-page .fp2-lg\:text-left { text-align: left; }
+  .fp2-page .fp2-lg\:text-right { text-align: right; }
+  .fp2-page .fp2-lg\:text-7xl { font-size: 4.5rem; }
+  .fp2-page .fp2-lg\:text-6xl { font-size: 3.75rem; }
+  .fp2-page .fp2-lg\:text-5xl { font-size: 3rem; }
+  .fp2-page .fp2-lg\:mx-0 { margin-left: 0; margin-right: 0; }
+  .fp2-page .fp2-lg\:justify-start { justify-content: flex-start; }
+  .fp2-page .fp2-lg\:justify-end { justify-content: flex-end; }
+  .fp2-page .fp2-lg\:flex-row { flex-direction: row; }
+  .fp2-page .fp2-lg\:aspect-landscape { aspect-ratio: 16/10; }
+  .fp2-page .fp2-lg\:py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+  .fp2-page .fp2-lg\:p-12 { padding: 3rem; }
+  .fp2-page .fp2-lg\:p-10 { padding: 2.5rem; }
+  .fp2-page .fp2-lg\:p-16 { padding: 4rem; }
+  .fp2-page .fp2-lg\:-translate-y-4 { transform: translateY(-1rem); }
+  .fp2-prop-grid { grid-template-columns: repeat(4, 1fr); }}/* 1024px */
 
-/* 1024px */
+
 @media (min-width: 1024px) {
-  .xl\:fp2-text-hero { font-size: 5rem; line-height: 1; }
-}
+  .fp2-page .fp2-xl\:fp2-text-hero { font-size: 5rem; line-height: 1; }}/* 1200px — Large Desktops */
 
-/* 1200px — Large Desktops */
-@media (min-width: 1200px) {
-}
 
-/* 1400px — Extra Large */
-@media (min-width: 1400px) {
-}
+@media (min-width: 1200px) {}/* 1400px — Extra Large */
 
-/*=========================================================
+
+@media (min-width: 1400px) {}/*=========================================================
   FP2 DESIGN SYSTEM
   Utilidades Adicionales (Tailwind Arbitrary Values)
 =========================================================*/
+
+
 .fp2-aspect-portrait { aspect-ratio: 4/5; }
 .fp2-aspect-video { aspect-ratio: 16/9; }
 .fp2-hero-height { min-height: 90vh; }
@@ -1274,65 +1266,1425 @@ h1.post-title, h1.entry-title, h2.post-title, h3.post-title {
 .fp2-text-2xs { font-size: 10px; }
 .fp2-text-label { font-size: 0.8rem; letter-spacing: 0.2em; font-weight: 700; color: #9ca3af; text-transform: uppercase; }
 .fp2-text-label-sm { font-size: 0.7rem; letter-spacing: 0.2em; font-weight: 700; color: var(--fp2-on-surface-variant); text-transform: uppercase; }
-.py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+.fp2-page .fp2-py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
 .fp2-py-14 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
 .fp2-rounded-2\.5xl { border-radius: 2.5rem; }
-.-rotate-12 { transform: rotate(-12deg); }
-.rotate-180 { transform: rotate(180deg); }
-.-bottom-6 { bottom: -1.5rem; }
-.-left-6 { left: -1.5rem; }
-.-bottom-2 { bottom: -0.5rem; }
-.-right-2 { right: -0.5rem; }
-.top-4 { top: 1rem; }
-.bottom-8 { bottom: 2rem; }
-.right-6 { right: 1.5rem; }
-.left-1\/4 { left: 25%; }
-.right-1\/4 { right: 25%; }
-.-top-32 { top: -8rem; }
-.-right-32 { right: -8rem; }
+.fp2-page .fp2--rotate-12 { transform: rotate(-12deg); }
+.fp2-page .fp2-rotate-180 { transform: rotate(180deg); }
+.fp2-page .fp2--bottom-6 { bottom: -1.5rem; }
+.fp2-page .fp2--left-6 { left: -1.5rem; }
+.fp2-page .fp2--bottom-2 { bottom: -0.5rem; }
+.fp2-page .fp2--right-2 { right: -0.5rem; }
+.fp2-page .fp2-top-4 { top: 1rem; }
+.fp2-page .fp2-bottom-8 { bottom: 2rem; }
+.fp2-page .fp2-right-6 { right: 1.5rem; }
+.fp2-page .fp2-left-1\/4 { left: 25%; }
+.fp2-page .fp2-right-1\/4 { right: 25%; }
+.fp2-page .fp2--top-32 { top: -8rem; }
+.fp2-page .fp2--right-32 { right: -8rem; }/* Select dark option fix */
 
-/* Select dark option fix */
-.fp2-select-dark option { color: var(--fp2-primary); }
 
-/* Line height fix */
-.fp2-lh-1 { line-height: 1; }
+.fp2-select-dark option { color: var(--fp2-primary); }/* Line height fix */
 
-/* Border bottom for input */
+
+.fp2-lh-1 { line-height: 1; }/* Border bottom for input */
+
+
 .fp2-border-b-2 { border-bottom: 2px solid var(--fp2-outline); }
-.fp2-border-b-2:focus-within { border-color: var(--fp2-secondary); }
+.fp2-border-b-2:focus-within { border-color: var(--fp2-secondary); }/* Number input no spinners */
 
-/* Number input no spinners */
+
 .fp2-no-spinner { -moz-appearance: textfield; }
 .fp2-no-spinner::-webkit-outer-spin-button,
-.fp2-no-spinner::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.fp2-no-spinner::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }/* Accent color for range inputs */
 
-/* Accent color for range inputs */
-input[type=range] { accent-color: var(--fp2-secondary); }
 
-/* Filter helpers */
-.filter { /* needed for blur-3xl to work in some browsers */ }
+.fp2-page input[type=range] { accent-color: var(--fp2-secondary); }/* Filter helpers */
 
-/* Additional grid cols for responsive */
-.lg\:grid-cols-1 { }
 
-/* Column span helpers */
-.col-span-2 { grid-column: span 2; }
-.col-span-3 { grid-column: span 3; }
-.sm\:col-span-1 { }
+.fp2-page .fp2-filter { /* needed for blur-3xl to work in some browsers */ }/* Additional grid cols for responsive */
 
-/* Prop-v2 specific overrides */
+
+.fp2-page .fp2-lg\:grid-cols-1 { }/* Column span helpers */
+
+
+.fp2-page .fp2-col-span-2 { grid-column: span 2; }
+.fp2-page .fp2-col-span-3 { grid-column: span 3; }
+.fp2-page .fp2-sm\:col-span-1 { }/* Prop-v2 specific overrides */
+
+
 .fp2-prop-header-gradient {
   background: linear-gradient(135deg, var(--fp2-dark-slate) 0%, #1a2a3a 100%);
   border-radius: var(--fp2-radius-3xl);
   padding: 2rem;
   position: relative;
   overflow: hidden;
+}/* Height for text-based hero where no min-height is needed */
+
+
+.fp2-min-h-auto { min-height: auto; }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Hero Section
+=========================================================*/
+
+
+.fp2-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
 }
 
-/* Height for text-based hero where no min-height is needed */
-.fp2-min-h-auto { min-height: auto; }
+.fp2-hero-grid {
+  max-width: var(--fp2-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--fp2-margin-mobile);
+  padding-right: var(--fp2-margin-mobile);
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
 
-/* Print */
+.fp2-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fp2-stack-md);
+  text-align: center;
+}
+
+.fp2-hero-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--fp2-primary);
+}
+
+.fp2-hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--fp2-on-surface-variant);
+  max-width: 32rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fp2-hero-cta-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.fp2-hero-img {
+  aspect-ratio: 4/5;
+  border-radius: var(--fp2-radius-3xl);
+  overflow: hidden;
+  box-shadow: var(--fp2-shadow-2xl);
+  border: 1px solid var(--fp2-outline);
+  background: var(--fp2-surface-alt);
+}
+.fp2-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.fp2-logo-badge {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--fp2-shadow-2xl);
+  transform: rotate(-12deg);
+  transition: transform var(--fp2-transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #fff;
+}
+.fp2-logo-badge img { width: 100%; height: 100%; object-fit: contain; }
+
+.fp2-blob-1 {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(171,0,48,0.1);
+  border-radius: 50%;
+  filter: blur(64px);
+  pointer-events: none;
+  animation: fp2-blob 7s infinite;
+}
+
+.fp2-blob-2 {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(168,85,247,0.1);
+  border-radius: 50%;
+  filter: blur(64px);
+  pointer-events: none;
+  animation: fp2-blob 7s infinite;
+  animation-delay: 2s;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Layout / Container
+=========================================================*/
+
+
+.fp2-container {
+  padding-left: var(--fp2-margin-mobile);
+  padding-right: var(--fp2-margin-mobile);
+  max-width: var(--fp2-container-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fp2-section { padding-top: var(--fp2-stack-lg); padding-bottom: var(--fp2-stack-lg); }
+.fp2-section-alt { padding-top: var(--fp2-stack-lg); padding-bottom: var(--fp2-stack-lg); background: var(--fp2-surface-alt); border-top: 1px solid var(--fp2-outline); border-bottom: 1px solid var(--fp2-outline); }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Títulos de Sección
+=========================================================*/
+
+
+.fp2-section-title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--fp2-primary);
+  letter-spacing: -0.05em;
+}
+.fp2-section-title-center {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--fp2-primary);
+  text-align: center;
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+}
+.fp2-section-subtitle {
+  font-size: 1.125rem;
+  color: var(--fp2-on-surface-variant);
+  line-height: 1.625;
+}
+
+.fp2-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+}
+.fp2-label-sm {
+  color: var(--fp2-on-surface-variant);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Cards
+=========================================================*/
+
+
+.fp2-card {
+  background: #fff;
+  border-radius: var(--fp2-radius-2xl);
+  border: 1px solid var(--fp2-outline);
+  overflow: hidden;
+  box-shadow: var(--fp2-shadow-sm);
+}
+.fp2-card-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fp2-bento-center {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--fp2-radius-2xl);
+  box-shadow: var(--fp2-shadow-sm);
+  border: 1px solid var(--fp2-outline);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  transition: transform 0.3s var(--fp2-bounce), box-shadow 0.3s ease;
+}
+.fp2-bento-center:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+
+.fp2-bento-row {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--fp2-radius-2xl);
+  border: 1px solid var(--fp2-outline);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: transform 0.3s var(--fp2-bounce), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.fp2-bento-row:hover { transform: translateY(-8px); box-shadow: var(--fp2-shadow-md); border-color: rgba(171,0,48,0.5); }
+
+.fp2-bento-col {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--fp2-radius-3xl);
+  border: 1px solid var(--fp2-outline);
+  box-shadow: var(--fp2-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s var(--fp2-bounce), box-shadow 0.3s ease;
+}
+.fp2-bento-col:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+
+.fp2-info-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.fp2-glass-stat {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: var(--fp2-radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  transition: background 0.3s ease;
+}
+.fp2-glass-stat:hover { background: rgba(255,255,255,0.1); }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Icon Boxes
+=========================================================*/
+
+
+.fp2-icon-surface {
+  width: 4rem; height: 4rem;
+  background: var(--fp2-surface-alt);
+  border-radius: var(--fp2-radius-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--fp2-outline);
+}
+.fp2-icon-surface-sm {
+  width: 3.5rem; height: 3.5rem;
+  background: var(--fp2-surface-alt);
+  border-radius: var(--fp2-radius-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fp2-primary);
+  border: 1px solid var(--fp2-outline);
+}
+.fp2-icon-secondary {
+  width: 3.5rem; height: 3.5rem;
+  background: var(--fp2-secondary);
+  border-radius: var(--fp2-radius-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: var(--fp2-shadow-lg);
+}
+.fp2-icon-outline {
+  width: 3.5rem; height: 3.5rem;
+  background: #fff;
+  border-radius: var(--fp2-radius-2xl);
+  border: 1px solid var(--fp2-outline);
+  box-shadow: var(--fp2-shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fp2-secondary);
+}
+.fp2-icon-hover {
+  width: 3.5rem; height: 3.5rem;
+  border-radius: var(--fp2-radius-xl);
+  background: var(--fp2-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fp2-primary);
+  transition: all var(--fp2-transition-fast);
+}
+.fp2-page .group:hover .fp2-icon-hover { background: var(--fp2-secondary); color: #fff; }
+
+.fp2-step-number {
+  width: 4rem; height: 4rem;
+  border-radius: var(--fp2-radius-2xl);
+  background: var(--fp2-surface-alt);
+  color: var(--fp2-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: 1px solid var(--fp2-outline);
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — FAQ (override completo)
+=========================================================*/
+
+
+.fp2-faq-wrap { max-width: 56rem; margin: 0 auto; }
+.fp2-faq-wrap .fp2-faq-item + .fp2-faq-item { margin-top: 1rem; }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Form Input (override)
+=========================================================*/
+
+
+.fp2-input-wrap { position: relative; }
+.fp2-input-wrap .fp2-input-icon {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Agent Footer
+=========================================================*/
+
+
+.fp2-footer-agent {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-left: var(--fp2-margin-mobile);
+  padding-right: var(--fp2-margin-mobile);
+  text-align: center;
+}
+.fp2-footer-agent > * + * { margin-top: 2.5rem; }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Mobile Bar Item
+=========================================================*/
+
+
+.fp2-mobile-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--fp2-on-surface-variant);
+  font-size: 0.75rem;
+  font-weight: 700;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Dark Panel Blurs
+=========================================================*/
+
+
+.fp2-dpanel-blur-1 {
+  position: absolute;
+  top: 0; right: 0;
+  width: 16rem; height: 16rem;
+  background: rgba(171,0,48,0.2);
+  border-radius: 50%;
+  filter: blur(64px);
+  pointer-events: none;
+}
+.fp2-dpanel-blur-2 {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 16rem; height: 16rem;
+  background: rgba(168,85,247,0.1);
+  border-radius: 50%;
+  filter: blur(64px);
+  pointer-events: none;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Responsive — Clases Semánticas
+=========================================================*/
+
+
+@media (min-width: 768px) {
+  .fp2-container { padding-left: var(--fp2-margin-desktop); padding-right: var(--fp2-margin-desktop); }
+  .fp2-hero-grid { padding-left: var(--fp2-margin-desktop); padding-right: var(--fp2-margin-desktop); }
+  .fp2-footer-agent { padding-left: var(--fp2-margin-desktop); padding-right: var(--fp2-margin-desktop); }}
+
+@media (min-width: 992px) {
+  .fp2-hero-grid { grid-template-columns: repeat(2, 1fr); }
+  .fp2-hero-content { text-align: left; }
+  .fp2-hero-title { font-size: 4.5rem; }
+  .fp2-hero-subtitle { margin-left: 0; margin-right: 0; }
+  .fp2-hero-cta-wrap { justify-content: flex-start; }
+  .fp2-hero-img { aspect-ratio: 16/10; }
+  .fp2-section-title { font-size: 3rem; }
+  .fp2-section-title-center { font-size: 3rem; }}
+
+@media (min-width: 1024px) {
+  .fp2-hero-title { font-size: 5rem; }}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — CTA Buttons
+=========================================================*/
+
+
+.fp2-btn-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--fp2-secondary);
+  color: #fff;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 20px rgba(171,0,48,0.4);
+  transition: all var(--fp2-transition-base);
+  overflow: hidden;
+}
+.fp2-btn-cta::after {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: rotate(45deg);
+  animation: fp2-glow-move 3s infinite;
+  pointer-events: none;
+}
+.fp2-btn-cta-lg { font-size: 1.5rem; padding-right: 2.5rem; }
+
+.fp2-btn-primary {
+  background: var(--fp2-primary);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: var(--fp2-radius-xl);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--fp2-shadow-lg);
+  transition: transform var(--fp2-transition-base);
+}
+.fp2-btn-primary:hover { transform: translateY(-2px); }
+
+.fp2-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--fp2-surface-alt);
+  border-radius: 9999px;
+  border: 1px solid var(--fp2-outline);
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Timeline
+=========================================================*/
+
+
+.fp2-timeline-node {
+  width: 3.5rem; height: 3.5rem;
+  border-radius: 50%;
+  background: var(--fp2-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--fp2-shadow-lg);
+  border: 4px solid var(--fp2-surface);
+}
+.fp2-timeline-node-dark { background: var(--fp2-dark-slate); }
+.fp2-timeline-node-secondary { background: var(--fp2-secondary); }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Dark Panel Variants
+=========================================================*/
+
+
+.fp2-dark-panel-lg { padding: 2rem; border-radius: var(--fp2-radius-3xl); }
+@media (min-width: 992px) { .fp2-dark-panel-lg { padding: 4rem; }}
+
+.fp2-aspect-square { aspect-ratio: 1/1; }/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Text Utilities
+=========================================================*/
+
+
+.fp2-text-body { color: var(--fp2-on-surface-variant); font-size: 1rem; line-height: 1.625; }
+.fp2-text-heading { font-weight: 700; font-size: 1.25rem; color: var(--fp2-primary); }
+.fp2-text-heading-lg { font-weight: 700; font-size: 1.5rem; color: var(--fp2-primary); }
+.fp2-text-stat { font-size: 2.25rem; font-weight: 700; color: #fff; }
+.fp2-text-stat-sm { font-size: 1.5rem; font-weight: 700; color: #fff; }
+.fp2-text-stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.8); }
+.fp2-text-muted { font-size: 0.875rem; color: #9ca3af; }
+.fp2-bento-row-title { font-weight: 700; font-size: 1.125rem; color: var(--fp2-primary); transition: color var(--fp2-transition-fast); }
+.fp2-page .group:hover .fp2-bento-row-title { color: var(--fp2-secondary); }
+.fp2-alert-success-text { color: var(--fp2-success); font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+
+.fp2-timeline-line {
+  position: absolute;
+  top: 50%; left: 0;
+  width: 100%; height: 2px;
+  background: var(--fp2-outline);
+  z-index: -1;
+  display: none;
+}
+@media (min-width: 768px) { .fp2-timeline-line { display: block; }}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Round 4
+=========================================================*/
+
+
+.fp2-btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: transform var(--fp2-transition-base);
+  box-shadow: var(--fp2-shadow-lg);
+}
+.fp2-btn-wa:hover { transform: translateY(-2px); }
+
+.fp2-link-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--fp2-secondary);
+  transition: color var(--fp2-transition-fast);
+}
+.fp2-link-secondary:hover { color: var(--fp2-primary); }
+
+.fp2-pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--fp2-outline);
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--fp2-on-surface-variant);
+  flex-grow: 1;
+}
+
+.fp2-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--fp2-gutter);
+}
+@media (min-width: 768px) { .fp2-grid-3 { grid-template-columns: repeat(3, 1fr); }}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Clases Semánticas — Additional Layout & Component Helpers
+=========================================================*/
+
+
+.fp2-section-dark {
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
+  background: var(--fp2-dark-slate);
+  position: relative;
+  overflow: hidden;
+}
+.fp2-section-dark-blur {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(171, 0, 48, 0.1);
+  border-radius: 50%;
+  filter: blur(64px);
+  pointer-events: none;
+}
+.fp2-testimonial-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.625;
+  margin-bottom: 2rem;
+  color: var(--fp2-primary);
+}
+.fp2-glass-card .fp2-testimonial-text {
+  color: #fff;
+}
+.fp2-testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--fp2-outline);
+  margin-top: 1.5rem;
+}
+.fp2-glass-card .fp2-testimonial-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+.fp2-faq-container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--fp2-margin-mobile);
+  padding-right: var(--fp2-margin-mobile);
+}
+@media (min-width: 768px) {
+  .fp2-faq-container {
+    padding-left: var(--fp2-margin-desktop);
+    padding-right: var(--fp2-margin-desktop);
+  }}
+.fp2-step-number-secondary {
+  background: var(--fp2-secondary);
+  color: #fff;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(171, 0, 48, 0.3);
+}
+.fp2-step-number-dark {
+  background: var(--fp2-dark-slate);
+  color: #fff;
+  border: none;
+  box-shadow: var(--fp2-shadow-lg);
+}
+.fp2-process-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .fp2-process-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }}
+.fp2-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--fp2-gutter);
+}
+@media (min-width: 768px) { .fp2-grid-2 { grid-template-columns: repeat(2, 1fr); }}
+
+.fp2-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--fp2-gutter);
+}
+@media (min-width: 576px) { .fp2-grid-4 { grid-template-columns: repeat(2, 1fr); }}
+@media (min-width: 1024px) { .fp2-grid-4 { grid-template-columns: repeat(4, 1fr); }}
+
+.fp2-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 768px) { .fp2-grid-5 { grid-template-columns: repeat(3, 1fr); }}
+@media (min-width: 1024px) { .fp2-grid-5 { grid-template-columns: repeat(5, 1fr); }}
+
+.fp2-grid-12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .fp2-grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }}
+.fp2-bento-row-alt {
+  background: var(--fp2-surface-alt);
+}
+.fp2-bento-row-primary {
+  background: var(--fp2-primary);
+  border-color: var(--fp2-primary);
+  color: #fff;
+  box-shadow: var(--fp2-shadow-2xl);
+}
+.fp2-bento-row-primary .fp2-bento-row-title {
+  color: #fff;
+}
+.fp2-bento-row-primary:hover .fp2-bento-row-title {
+  color: var(--fp2-secondary);
+}
+.fp2-bento-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.5));
+  z-index: 0;
+  pointer-events: none;
+}
+.fp2-bento-row-primary .fp2-bento-gradient {
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.05));
+}
+.fp2-icon-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 10;
+  box-shadow: var(--fp2-shadow-lg);
+  background: var(--fp2-secondary);
+  color: #fff;
+}
+.fp2-icon-circle-glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+}
+.fp2-select-dark-noicon {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--fp2-radius-xl);
+  padding: 0.875rem 2.5rem 0.875rem 1rem;
+  color: #fff;
+  outline: none;
+  transition: all var(--fp2-transition-fast);
+  appearance: none;
+  cursor: pointer;
+}
+.fp2-select-dark-noicon:focus {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--fp2-secondary);
+}
+.fp2-select-dark-noicon option {
+  color: var(--fp2-primary);
+}/* Calculator Specifics */
+
+
+.fp2-calc-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(64px);
+  border-radius: var(--fp2-radius-3xl);
+  border: 1px solid var(--fp2-outline);
+  overflow: hidden;
+  box-shadow: var(--fp2-shadow-2xl);
+}
+.fp2-calc-side-form {
+  padding: 2rem;
+  border-bottom: 1px solid var(--fp2-outline);
+  position: relative;
+}
+.fp2-calc-side-result {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--fp2-surface-alt);
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .fp2-calc-side-form {
+    padding: 3rem;
+    border-bottom: none;
+    border-right: 1px solid var(--fp2-outline);
+  }
+  .fp2-calc-side-result {
+    padding: 3rem;
+  }}
+.fp2-select-light {
+  width: 100%;
+  background: var(--fp2-surface-alt);
+  border: 1px solid var(--fp2-outline);
+  border-radius: var(--fp2-radius-2xl);
+  padding: 1rem 2.5rem 1rem 1.25rem;
+  color: var(--fp2-primary);
+  font-weight: 500;
+  outline: none;
+  transition: all var(--fp2-transition-fast);
+  appearance: none;
+  cursor: pointer;
+}
+.fp2-select-light:focus {
+  border-color: var(--fp2-secondary);
+  box-shadow: 0 0 0 1px var(--fp2-secondary);
+}
+.fp2-input-icon-right {
+  position: absolute;
+  top: 0; bottom: 0; right: 1rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.fp2-calc-num-input {
+  width: 4rem;
+  background: transparent;
+  color: var(--fp2-secondary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: right;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.fp2-calc-num-input::-webkit-outer-spin-button,
+.fp2-calc-num-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fp2-calc-num-input {
+  -moz-appearance: textfield;
+}
+.fp2-calc-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-bottom: 2px solid var(--fp2-outline);
+  transition: border-color var(--fp2-transition-fast);
+  padding-bottom: 0.25rem;
+}
+.fp2-calc-input-row:focus-within {
+  border-color: var(--fp2-secondary);
+}
+.fp2-slider-range {
+  width: 100%;
+  height: 0.5rem;
+  background: var(--fp2-outline);
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  accent-color: var(--fp2-secondary);
+  -webkit-appearance: none;
+}
+.fp2-calc-result-icon {
+  width: 6rem;
+  height: 6rem;
+  background: #fff;
+  border: 1px solid var(--fp2-outline);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: var(--fp2-shadow-sm);
+}
+.fp2-calc-loading {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  position: absolute;
+  inset: 0;
+  background: rgba(249, 250, 251, 0.9);
+  backdrop-filter: blur(4px);
+  z-index: 20;
+}
+.fp2-spinner {
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid rgba(171, 0, 48, 0.2);
+  border-top-color: var(--fp2-secondary);
+  border-radius: 50%;
+  animation: fp2-spin 1s linear infinite;
+}
+.fp2-btn-pricing {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: var(--fp2-radius-xl);
+  font-weight: 700;
+  transition: all var(--fp2-transition-fast);
+  background: var(--fp2-primary);
+  color: #fff;
+  border: 1px solid var(--fp2-primary);
+}
+.fp2-btn-pricing:hover {
+  background: var(--fp2-secondary);
+  border-color: var(--fp2-secondary);
+}
+.fp2-dark-panel .fp2-btn-pricing {
+  background: var(--fp2-secondary);
+  border-color: var(--fp2-secondary);
+}
+.fp2-dark-panel .fp2-btn-pricing:hover {
+  background: #fff;
+  color: var(--fp2-primary);
+  border-color: #fff;
+}/*=========================================================
+  FP2 DESIGN SYSTEM
+  Nuevas Clases Semánticas de Utilidad (Limpieza Inline)
+=========================================================*/
+
+
+.fp2-icon-error {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--fp2-error);
+}
+.fp2-avatar-initials {
+  background: var(--fp2-dark-slate);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.fp2-section-subtitle-center {
+  font-size: 1.125rem;
+  color: var(--fp2-on-surface-variant);
+  line-height: 1.625;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.fp2-bento-col-primary {
+  background: var(--fp2-secondary);
+  border-color: var(--fp2-secondary);
+  color: #fff;
+  box-shadow: var(--fp2-shadow-lg);
+}
+.fp2-icon-outline-error {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #ef4444;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fp2-icon-secondary-light {
+  background: rgba(171, 0, 48, 0.1);
+  border-color: rgba(171, 0, 48, 0.2);
+  color: var(--fp2-secondary);
+}
+.fp2-step-number-white {
+  background: #fff;
+  color: var(--fp2-secondary);
+  border: none;
+  box-shadow: var(--fp2-shadow-lg);
+}
+.fp2-container-narrow {
+  padding-left: var(--fp2-margin-mobile);
+  padding-right: var(--fp2-margin-mobile);
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fp2-section-subtitle-center-narrow {
+  font-size: 1.125rem;
+  color: var(--fp2-on-surface-variant);
+  line-height: 1.625;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.fp2-glass-card-center {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: var(--fp2-radius-3xl);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.fp2-glass-card-center:hover {
+  background: rgba(255,255,255,0.1);
+}
+.fp2-label-xs {
+  color: var(--fp2-on-surface-variant);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.fp2-bento-col-alt {
+  background: var(--fp2-surface-alt);
+}
+.fp2-grid-offset-down {
+  margin-top: 2rem;
+}
+.fp2-grid-offset-up {
+  margin-top: -2rem;
+}
+.fp2-dark-panel-center {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fp2-btn-cta-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: var(--fp2-radius-xl);
+  padding: 1rem;
+}
+.fp2-icon-size-sm { font-size: 1rem !important; }
+.fp2-icon-size-md { font-size: 1.25rem !important; }
+.fp2-icon-size-lg { font-size: 1.5rem !important; }
+.fp2-icon-size-xl { font-size: 1.75rem !important; }
+.fp2-icon-size-2xl { font-size: 2rem !important; }
+.fp2-card-alt {
+  background: var(--fp2-surface-alt);
+}
+.fp2-gap-xl {
+  gap: 4rem;
+}
+.fp2-hover-opacity-flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.25rem;
+}
+.fp2-note-card {
+  font-style: italic;
+  margin-top: 1.5rem;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 0.75rem;
+  border: 1px solid var(--fp2-outline);
+  border-radius: var(--fp2-radius-xl);
+}
+.fp2-step-number-round {
+  border-radius: 50% !important;
+  margin-bottom: 0.5rem !important;
+}
+.fp2-text-body-center {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.fp2-avatar-initials-lg {
+  background: var(--fp2-dark-slate);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+.fp2-wa-float .bi {
+  font-size: 1.75rem;
+}
+.fp2-mobile-bar-item .bi {
+  font-size: 1.5rem;
+}
+.fp2-calc-spinners {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.25rem;
+}
+.fp2-calc-disclaimer {
+  font-style: italic;
+  margin-top: 1.5rem;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 0.75rem;
+  border: 1px solid var(--fp2-outline);
+  border-radius: var(--fp2-radius-xl);
+}/* Print */
+
+
 @media print {
-  .fp2-wa-float, .fp2-mobile-bar { display: none !important; }
+  .fp2-wa-float, .fp2-mobile-bar { display: none !important; }}
+
+
+/* Additional Layout Helpers for Scoped Utilities */
+.fp2-page .fp2-hidden { display: none !important; }
+.fp2-page .fp2-flex { display: flex; }
+.fp2-page .fp2-flex-col { flex-direction: column; }
+.fp2-page .fp2-flex-grow { flex-grow: 1; }
+.fp2-page .fp2-flex-shrink-0 { flex-shrink: 0; }
+.fp2-page .fp2-flex-1 { flex: 1 1 0%; }
+.fp2-page .fp2-grid { display: grid; }
+.fp2-page .fp2-items-center { align-items: center; }
+.fp2-page .fp2-items-start { align-items: flex-start; }
+.fp2-page .fp2-items-baseline { align-items: baseline; }
+.fp2-page .fp2-justify-center { justify-content: center; }
+.fp2-page .fp2-justify-between { justify-content: space-between; }
+.fp2-page .fp2-relative { position: relative; }
+.fp2-page .fp2-absolute { position: absolute; }
+.fp2-page .fp2-content-overlay { position: relative; z-index: 10; }
+.fp2-page .fp2-w-full { width: 100%; }
+.fp2-page .fp2-h-full { height: 100%; }
+.fp2-page .fp2-object-cover { object-fit: cover; }
+.fp2-page .fp2-object-contain { object-fit: contain; }
+.fp2-page .fp2-text-center { text-align: center; }
+.fp2-page .fp2-text-left { text-align: left; }
+.fp2-page .fp2-text-right { text-align: right; }
+.fp2-page .fp2-font-bold { font-weight: 700; }
+.fp2-page .fp2-font-medium { font-weight: 500; }
+.fp2-page .fp2-font-normal { font-weight: 400; }
+.fp2-page .fp2-border-y { border-top: 1px solid var(--fp2-outline); border-bottom: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-t { border-top: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-b { border-bottom: 1px solid var(--fp2-outline); }
+.fp2-page .fp2-border-outline { border-color: var(--fp2-outline); }
+.fp2-page .fp2-overflow-hidden { overflow: hidden; }
+.fp2-page .fp2-cursor-pointer { cursor: pointer; }
+.fp2-page .fp2-pointer-events-none { pointer-events: none; }
+.fp2-page .fp2-duration-300 { transition-duration: 0.3s; }
+.fp2-page .fp2-transition-colors { transition: color var(--fp2-transition-fast), background-color var(--fp2-transition-fast), border-color var(--fp2-transition-fast); }
+.fp2-page .fp2-animate-pulse { animation: fp2-pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+.fp2-page .fp2-animate-spin { animation: fp2-spin 1s linear infinite; }
+.fp2-page .fp2-hover-secondary:hover { color: var(--fp2-secondary) !important; }
+.fp2-page .fp2-label-xs { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 700; color: var(--fp2-on-surface-variant); margin-bottom: 0.5rem; }
+
+/* Prop-v2 specific semantic classes */
+.fp2-page .fp2-prop-title { color: #1f1f1f; font-size: 1.375rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; }
+@media (min-width: 768px) { .fp2-page .fp2-prop-title { font-size: 1.5rem; } }
+.fp2-page .fp2-prop-icon { width: 1.75rem; height: 1.75rem; color: #1f1f1f; font-size: 1.25rem; display: inline-flex; align-items: center; justify-content: center; }
+.fp2-page .fp2-prop-value { font-size: 0.9375rem; font-weight: 500; color: #1f1f1f; }
+.fp2-page .fp2-prop-section-title { font-size: 1.25rem; font-weight: 700; color: #1f1f1f; text-transform: uppercase; letter-spacing: 0.05em; }
+.fp2-page .fp2-prop-price { color: var(--fp2-secondary); font-weight: 900; font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+/* Stacking and space-y equivalents */
+.fp2-page .fp2-space-y-2 > * + * { margin-top: 0.5rem; }
+.fp2-page .fp2-space-y-3 > * + * { margin-top: 0.75rem; }
+.fp2-page .fp2-space-y-4 > * + * { margin-top: 1rem; }
+.fp2-page .fp2-space-y-6 > * + * { margin-top: 1.5rem; }
+.fp2-page .fp2-space-y-8 > * + * { margin-top: 2rem; }
+.fp2-page .fp2-space-y-10 > * + * { margin-top: 2.5rem; }
+.fp2-page .fp2-space-y-12 > * + * { margin-top: 3rem; }
+
+/* Gap equivalents */
+.fp2-page .fp2-gap-1 { gap: 0.25rem; }
+.fp2-page .fp2-gap-2 { gap: 0.5rem; }
+.fp2-page .fp2-gap-3 { gap: 0.75rem; }
+.fp2-page .fp2-gap-4 { gap: 1rem; }
+.fp2-page .fp2-gap-6 { gap: 1.5rem; }
+.fp2-page .fp2-gap-8 { gap: 2rem; }
+.fp2-page .fp2-gap-10 { gap: 2.5rem; }
+.fp2-page .fp2-gap-16 { gap: 4rem; }
+
+/* Grid columns layout */
+.fp2-page .fp2-grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.fp2-page .fp2-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fp2-page .fp2-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Detail Item for features checklist */
+.fp2-page .fp2-detail-item { display: flex; align-items: flex-start; gap: 0.5rem; }
+.fp2-page .fp2-check-icon { flex-shrink: 0; color: var(--fp2-secondary); margin-top: 6px; }
+
+
+
+/* Consolidated Semantic Layout & Component Styles */
+.fp2-page .fp2-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.fp2-page .fp2-card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.25;
+}
+.fp2-page .fp2-card-title-dark {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--fp2-primary);
+  line-height: 1.25;
+}
+.fp2-page .fp2-bento-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--fp2-primary);
+  margin-bottom: 1rem;
+}
+.fp2-page .fp2-bento-title-white {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.fp2-page .fp2-card-desc {
+  color: var(--fp2-text-gray-300);
+  line-height: 1.625;
+  font-size: 1.125rem;
+}
+.fp2-page .fp2-card-desc-dark {
+  color: var(--fp2-on-surface-variant);
+  line-height: 1.625;
+  font-size: 1rem;
+}
+.fp2-page .fp2-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+  color: var(--fp2-text-gray-300);
+}
+.fp2-page .fp2-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.fp2-page .fp2-section-header-spacing {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.fp2-page .fp2-section-subtitle {
+  color: var(--fp2-on-surface-variant);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fp2-page .fp2-section-subtitle-spacing {
+  color: var(--fp2-on-surface-variant);
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+.fp2-page .fp2-section {
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
+  background-color: var(--fp2-surface);
+}
+.fp2-page .fp2-section-alt {
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
+  background-color: var(--fp2-surface-alt);
+  border-top: 1px solid var(--fp2-outline);
+  border-bottom: 1px solid var(--fp2-outline);
+}
+.fp2-page .fp2-section-bordered {
+  padding-top: var(--fp2-stack-lg);
+  padding-bottom: var(--fp2-stack-lg);
+  background-color: var(--fp2-surface);
+  border-top: 1px solid var(--fp2-outline);
+  border-bottom: 1px solid var(--fp2-outline);
+}
+.fp2-page .fp2-section-large {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: var(--fp2-surface);
+}
+.fp2-page .fp2-section-alt-padded {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: var(--fp2-surface-alt);
+  border-bottom: 1px solid var(--fp2-outline);
+}
+.fp2-page .fp2-space-y-4-mb-10-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+.fp2-page .fp2-space-y-6-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+.fp2-page .fp2-pricing-card-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+}
+.fp2-page .fp2-list-item-dark {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #e5e7eb;
+}
+.fp2-page .fp2-list-item-light {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--fp2-on-surface-variant);
+}
+.fp2-page .fp2-list-icon {
+  flex-shrink: 0;
+  color: var(--fp2-secondary);
+}
+.fp2-page .fp2-img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fp2-page .fp2-img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.fp2-page .fp2-img-contain-white {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+.fp2-page .fp2-hover-secondary-transition {
+  transition: color var(--fp2-transition-fast);
+}
+.fp2-page .fp2-hover-secondary-transition:hover {
+  color: var(--fp2-secondary) !important;
+}
+.fp2-page .fp2-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fp2-page .fp2-text-medium {
+  color: var(--fp2-on-surface-variant);
+  font-weight: 500;
+}
+.fp2-page .fp2-text-white-sm-bold {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.fp2-page .fp2-text-primary-sm-bold {
+  color: var(--fp2-primary);
+  font-weight: 700;
+  font-size: 0.875rem;
 }
